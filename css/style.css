@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body {
+    background-color: #F3F5FC;
+    font-family: 'Inter', sans-serif;
+}
+
+header {
+    margin: 1.5em 0;
+}
+
+#logo {
+  margin-left: 5rem;
+}
+
+.alerta{
+    margin-top: auto;
+    display: flex;
+    gap: 8px;
+    width: 66%;
+    padding-left: 22%;
+    height: 30px;
+}
+
+main {
+    padding: 0 2em;
+}
+
+.left-panel {
+    width: 60%;
+    display: inline-block;
+    margin-left: 2rem;
+}
+
+.fa {
+    margin-left: 8.5rem;
+}
+textarea {
+    width: 90%;
+    height: 20rem;
+    padding: 1em;
+    background: #F3F5FC;
+    color: #0A3871;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5em;
+    border: none;
+}
+
+textarea::placeholder {
+    color: #0a38711a;
+}
+
+textarea:focus {
+    border: 0 none;
+    outline: 0;
+}
+
+.buttons {
+    text-align: center;
+    margin: 3.33rem 0;
+}
+
+.dark-button {
+    background: #0A3871;
+    color: #F3F5FC;
+    border: 1px solid #0A3871;
+    border-radius: 0.62rem;
+    font-size: 0.8em;
+    padding: 0.94rem 0rem;
+    width: 16.62rem;
+    margin: 0 1.56rem;
+}
+
+.light-button {
+    background: none;
+    color: #0A3871;
+    border: 1px solid #0A3871;
+    border-radius: 0.62rem;
+    font-size: 0.8em;
+    padding:  0.94rem 0rem;
+    width:  16.62rem;
+    margin:  0 1.56rem;
+}
+
+.left-panel  p {
+    text-align: left;
+    margin-top: 0.62rem;
+    font-size: 0.8em;
+    color: #495057;
+}
+
+.right-panel {
+    width: 30%;
+    display: inline-block;
+    margin-top: -5rem;
+    vertical-align: top;
+    text-align: center;
+    background-color: #FFFFFF;
+    border-radius: 0.94rem;
+    height: 42.75rem;
+    box-shadow: 5px 5px 15px #49505780;
+}
+
+p {
+    margin-bottom: 3rem;
+    line-height: 1.5;
+}
+
+.message, .output {
+    padding: 1em;
+    font-size: 1.5rem;
+}
+
+strong {
+    color: #343A40;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.right-panel  p {
+    text-align: center;
+    margin-top: 1.56rem;
+    font-size: 1em;
+    color: #495057;
+}
+
+.output-text {
+    text-align: center;
+    height: 21.87rem;
+    margin: 0rem;
+}
+
+#copy-button {
+    width: 85%;
+    margin: 8rem 0rem;
+}
+
+footer {
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 1em 0;
+}
+
+footer > p, a {
+    font-size: 0.95em;
+    color: #495057;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+@media screen and (max-width:1024px) {
+    .left-panel, .right-panel {
+        width: 100%;
+    }
+
+    .desenho {
+        display: none;
+    }
+
+    .right-panel {
+        height: 18.75rem;
+    }
+
+    .output-text {
+        height: 10.31rem;
+    }
+}
+
+@media screen and (max-width:480px) {
+    #crip-button {
+        margin-bottom: 1.5em;
+    }
+
+    footer {
+        padding: 3em 0;
+    }
+
+    footer > p, a {
+        font-size: 0.8em;
+    }
+}
